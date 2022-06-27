@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reverse any character</title>
+	<title>Reverse</title>
 </head>
 <body>
-    <script>
-        a=prompt("Enter any name");
-        b=a.length;
-        for(i=b;i>=0;i--)
-        {
-            document.write(a.charAt(i));
-        }
-    </script>
-    
+<script type="text/javascript">
+	//reverse  words only
+	var arr="Python PHP yuvraj java";
+	var arr1=arr.split(" ");
+	var s2=" ";
+	for(i=0;i<arr1.length;i++)
+	{
+		var s=arr1[i];
+		var s1 = "";
+		for(j=s.length-1;j>=0;j--)
+		{
+			s1=s1+s[j];
+		}
+		s2=s2+s1+" ";
+	}
+	document.write(s2);
+	 //                                                            reverse paragraph and word also
+        // b=arr.length;
+        // for(i=b;i>=0;i--)
+        // {
+        //     document.write(arr.charAt(i));
+        // }
+</script>
 </body>
 </html>
